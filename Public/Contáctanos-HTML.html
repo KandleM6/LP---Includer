@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contacto</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Luckiest+Guy&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="Assets/styles/Contáctanos-CSS.css" />
+  </head>
+  <body>
+    <div class="barra-superior">
+      <span>ENCUÉNTRANOS EN</span>
+      <div class="social-icons">
+        <a href="#"><img src="Assets/images/pngwing.com (5).png" alt="TikTok" /></a>
+        <a href="#"><img src="Assets/images/pngegg.png" alt="Facebook" /></a>
+        <a href="#"><img src="Assets/images/pngwing.com (6).png" alt="Instagram" /></a>
+      </div>
+    </div>
+        <!-- Barra de Navegación -->
+        <nav class="topheader">
+          <a href="index.html" class="logo">
+            <img src="Assets/images/LOGO_INCLUDER-removebg-preview (4).png" alt="Includer Logo" />
+          </a>
+          <h1>INCLUDER</h1>
+          <!--Boton menu responsive- OPEN-->
+          <button class="open-menu" aria-label="Abrir-menu">
+            <img src="Assets/images/menu.png" alt="Menú hamburguesa"/>
+          </button>
+          <ul class="menu-horizontal">
+            <!--Boton menu responsive- CLOSE-->
+            <button class="close-menu" aria-label="Cerrar-menu">  
+              <img src="Assets/images/close.png" alt="Menú hamburguesa"/>
+            </button>
+            <li>
+              <a href="" class="btn-explora">EXPLORA</a>
+              <ul class="menu-vertical">
+                <li>
+                  <a href="MapaInteractivo-HTML.html">Mapa Interactivo</a>
+                </li>
+                <li><a href="Recursos-HTML.html">Recursos</a></li>
+                <li>
+                  <a href="NuestrosServicios-HTML.html"
+                    >Nuestros servicios</a
+                  >
+                </li>
+                <li><a href="Evaluaciones-HTML.html">Evaluaciones</a></li>
+                <li>
+                  <a href="SoporteTécnico-HTML.html">Soporte técnico</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="index.html" class="btn-home">HOME</a>
+            </li>
+            <li>
+              <a href="IniciarSesión-HTML.html" class="btn-login"
+                >INICIAR SESIÓN</a>
+            </li>
+          </ul>
+        </nav>
+    <!-- Sección Principal -->
+    <!--SECTION FORMULARIO-->
+    <section class="Contactanos-Section">
+      <div id="Section_contact">
+        <div class="Container-Contactanos">
+          <form name="frm" method="post" action="/submit-form">
+            <fieldset id="form">
+              <legend>CONTÁCTANOS</legend>
+              <div class="formulario-primerafila">
+                <div class="formulario-item">
+                  <label for="fname" class="label5">NOMBRES 👤</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    size="30"
+                    placeholder="Tu nombre"
+                    
+                  />
+                </div>
+                <div class="formulario-item">
+                  <label for="flastname" class="label1">APELLIDOS 👤</label>
+                  <input
+                    type="text"
+                    id="flastname"
+                    name="flastname"
+                    size="30"
+                    placeholder="Tu apellido"
+                    
+                  />
+                </div>
+              </div>
+              <div class="formulario-segundafila">
+                <div class="formulario-item">
+                  <label for="femail" class="label6">EMAIL ✉</label>
+                  <input
+                    type="text"
+                    id="femail"
+                    name="femail"
+                    size="30"
+                    placeholder="Tu email"
+                    
+                  />
+                </div>
+                <div class="formulario-item">
+                  <label for="fdistrito" class="label2">DISTRITOS 🗺️:</label>
+                  <select id="fdistrito" name="fdistrito" >
+                    <option value="">Selecciona un distrito</option>
+                    <option>Ancón</option>
+                    <option>Apurímac</option>
+                    <option>Ate</option>
+                    <option>Barranco</option>
+                    <option>Breña</option>
+                    <option>Carabayllo</option>
+                    <option>Cercado de Lima</option>
+                    <option>Chaclacayo</option>
+                    <option>Chorrillos</option>
+                    <option>Cieneguilla</option>
+                    <option>Comas</option>
+                    <option>El Agustino</option>
+                    <option>Independencia</option>
+                    <option>Jesús María</option>
+                    <option>La Molina</option>
+                    <option>La Victoria</option>
+                    <option>Lince</option>
+                    <option>Los Olivos</option>
+                    <option>Lurigancho</option>
+                    <option>Lurín</option>
+                    <option>Magdalena del mar</option>
+                    <option>Miraflores</option>
+                    <option>Pachacámac</option>
+                    <option>Pucusana</option>
+                    <option>Puente Piedra</option>
+                    <option>Punta Hermosa</option>
+                    <option>Punta Negra</option>
+                    <option>Rímac</option>
+                    <option>San Bartolo</option>
+                    <option>San Borja</option>
+                    <option>San Isidro</option>
+                    <option>San Juan de Lurigancho</option>
+                    <option>San Juan de Miraflores</option>
+                    <option>San Luis</option>
+                    <option>San Martín de Porres</option>
+                    <option>San Miguel</option>
+                    <option>Santa Anita</option>
+                    <option>Santa María del Mar</option>
+                    <option>Santa Rosa</option>
+                    <option>Santiago de Surco</option>
+                    <option>Surquillo</option>
+                    <option>Villa El Salvador</option>
+                    <option>Villa María del Triunfo</option>
+                    <option>Cercado de Lima</option>
+                  </select>
+                </div>
+              </div>
+              <div class="formulario-item">
+                <label class="labelsexo">SEXO:</label>
+                <input type="radio" name="fsex" value="H" />
+                <span>Hombre</span>
+                <input type="radio" name="fsex" value="M" /> <span>Mujer</span>
+                <input type="radio" name="fsex" value="P" />
+                <span>Prefiero no decirlo</span>
+              </div>
+              <label for="fmessage" class="textasunto">MENSAJE:</label>
+              <div>
+                <textarea id="fmessage" name="fmessage" placeholder="Escribe tu mensaje aquí*"
+                  
+                ></textarea>
+              </div>
+              <div class="formulario-item">
+                <li>
+                  <input type="checkbox" name="fterminos" size="30"  />
+                  <span class="checkbox-text"
+                    >Acepto los términos y condiciones del servicio</span
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" name="fconsentimiento" size="30" />
+                  <span class="checkbox-text"
+                    >Otorgo mi consentimiento para el uso de mis datos
+                    personales</span
+                  >
+                </li>
+              </div>
+              <p>
+                <br>
+                <input type="submit" class="btn-frm-contact" value="ENVIAR" />
+              </p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>  
+          <a href="index.html"">
+              <img
+                src="Assets/images/LOGO_INCLUDER-removebg-preview (4).png"
+                alt="Logo Includer"
+                style="width: 50px; vertical-align: middle; margin-right: 10px"
+              />
+            </a>
+           INCLUDER</h3>
+          <ul>
+            <li><a href="#">Copyright © 2024 Includer.</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>EMPRESA</h3>
+          <ul>
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="#">Contáctanos</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>SOPORTE</h3>
+          <ul>
+            <li><a href="#">Centro de Ayuda</a></li>
+            <li><a href="#">Términos de Servicio</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>MANTENTE AL DÍA</h3>
+          <form>
+            <input
+              type="email"
+              placeholder="Tu correo electrónico"
+              
+              class="email-input"
+            />
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="Assets/scripts/Contáctanos-JS.js"> </script>
+</html>
