@@ -1,0 +1,706 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Header Bar */
+.barra-superior {
+  background-color: #0b3dad;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+.barra-superior span {
+  font-weight: bold;
+  margin-left: 1160px;
+}
+
+.social-icons img {
+  width: 23px;
+  margin-left: 5px;
+}
+
+/* Alineación del Menú Horizontal */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px; /* Tamaño reducido del logo */
+  margin-right: 10px;
+  filter: drop-shadow(0 2px 5px #33333384);
+}
+
+.topheader h1 {
+  font-size: 25px; /* Tamaño más pequeño para el texto del logo */
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin-left: -60px;
+  padding-left: -20px;
+}
+
+/*HEADER*/
+.topheader {
+  width: 100%;
+  z-index: 100;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #89abea;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.menu-vertical li {
+  margin: 0; /* Eliminar margen entre los elementos */
+}
+
+.menu-horizontal li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  justify-content: inline-block;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.menu-horizontal li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  margin: 0;
+  width: 150px; /* Ajustar el ancho según sea necesario */
+  background-color: #89abea;
+  z-index: 500;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-vertical li a {
+  display: block;
+  padding: 10px 15px; /* Ajustar el padding según sea necesario */
+  color: white;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.menu-vertical li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-horizontal li {
+  margin-left: 20px; /* Ajustar el espacio entre los botones principales */
+}
+
+.btn-explora,
+.btn-contacto,
+.btn-home {
+  -webkit-text-stroke: 0.5px black;
+}
+
+.btn-login {
+  background-color: #0b3dad;
+  text-decoration: none;
+}
+.btn-login:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4ff;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #0056ff;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  gap: 70px; /* Mayor espacio entre las secciones izquierda y derecha */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: flex-start; /* Alinea los elementos al inicio */
+}
+
+.text-box {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.text-box h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-left: 25px;
+}
+
+.text-box p {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #0b3dad; /* Color de fondo del recuadro */
+  margin-top: 15px;
+  color: #ffffff;
+  text-align: justify;
+  font-size: 1.3rem;
+  font-family: "Literata", serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-left: 23px;
+}
+
+.video-section {
+  flex: 1;
+  text-align: left;
+}
+
+.video-section h2 {
+  padding: 10px;
+  background-color: #4b7cdb; /* Fondo azul */
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 10px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.video-section p {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #000000;
+  text-align: center;
+  font-family: "Literata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Guides Section */
+.guides {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.guides h2 {
+  background-color: #76aaff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-right: 60px;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgb(99, 96, 96);
+  text-align: center;
+}
+
+.guides ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+  gap: 40px;
+}
+
+.guides li {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 12px;
+  position: relative;
+  margin-right: 10px;
+  font-family: "Literata", serif;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+}
+.guides li:not(:last-child) {
+  border-bottom: 4px solid #4b7cdb;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.guides li:hover {
+  text-decoration: underline;
+  text-decoration-line: #0b3dad;
+  color: #0b3dad;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.guides img {
+  height: 80px;
+  width: auto;
+}
+.recur-img img {
+  height: 150px;
+  width: 150px;
+  margin-right: 100px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+/* Pie de pagina */
+.footer-section {
+  background-color: #d9d9d9;
+  color: #000000;
+  padding: 20px 20px;
+  width: 100vw; /* Asegura que ocupe el ancho completo de la pantalla */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye las columnas a lo largo de toda la página */
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  padding: 0 20px; /* Añade un poco de margen lateral */
+}
+
+.footer-column {
+  width: 20%; /* Mantén el ancho de las columnas */
+}
+
+.footer-column:last-child(4) {
+  margin-right: -90px; /* Ajusta el valor para separar la segunda columna */
+}
+
+.footer-column {
+  width: 90%;
+}
+
+.footer-column h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left; /* Alinea los títulos de cada columna */
+  margin-top: 8px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  text-align: left; /* Alinea los subtítulos con los títulos */
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-column li {
+  font-family: "Literata", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.footer-column li:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.email-input {
+  padding: 10px; /* Espaciado interno */
+  width: 80%; /* Ancho del campo de entrada */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris claro */
+  font-size: 16px; /* Tamaño de fuente */
+  margin-bottom: 10px; /* Espacio inferior entre el campo y el botón */
+  background-color: #ffffff;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+  /*MENU*/
+  .menu-horizontal {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 97, 3%; /* Cambiar de 80% a 100% para que ocupe todo el ancho */
+    height: 100%; /* Asegurarse de que el menú ocupe toda la altura de la pantalla */
+    align-items: center;
+    background-color: #0b3dad;
+    overflow-y: auto;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 9999;
+    padding: 20px 0;
+  }
+
+  .menu-horizontal.menu_opened {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .menu-horizontal li {
+    padding: 10px 0; /* Espacio vertical entre los botones */
+    margin: 0; /* Asegurarse de que no haya margen */
+    width: 100%; /* Asegurarse de que los botones ocupen todo el ancho */
+    text-align: center; /* Centrar el texto de los botones */
+  }
+
+  .menu-horizontal a {
+    color: black;
+    line-height: 40px;
+    font-size: 22px;
+    padding: 5px 0;
+  }
+
+  .menu-horizontal a:hover,
+  .menu-horizontal a.selected {
+    color: #0b3dad;
+    text-decoration: underline;
+  }
+
+  .menu-horizontal a:focus {
+    outline: 2px dashed #4b7cdb;
+    outline-offset: 4px;
+  }
+
+  .menu-horizontal a::after {
+    content: none;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 30px;
+    position: absolute;
+    right: 10px; /* Ajusta este valor para mover más a la derecha */
+    top: 25px;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 10px 10px;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Ajuste de la barra superior */
+  .barra-superior {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barra-superior span {
+    margin-left: 0;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+
+  .topheader h1 {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  /* General Styles */
+  .container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  /* Text Box */
+  .text-box h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .text-box p {
+    font-size: 1.1rem;
+  }
+
+  /* Video Section */
+  .video-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .video-section h2 {
+    font-size: 1.6rem;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+
+  .video-section p {
+    font-size: 1.1rem;
+  }
+
+  /* Guides Section */
+  .guides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guides h2 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .guides ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .guides li {
+    font-size: 1.1rem;
+    position: relative;
+    margin-right: 5px;
+  }
+
+  /* Resources Section */
+  .recursos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Footer */
+  .footer-section {
+    background-color: #d9d9d9;
+    color: #000000;
+    padding: 20px;
+    width: 112%; /* Asegura que ocupe el ancho de la ventana en pantallas pequeñas */
+    display: flex;
+    justify-content: center; /* Centrar el contenido */
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    width: 100%;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  /* Logo y título de INCLUDER a la derecha */
+  .footer-column.logo-column {
+    text-align: right;
+    align-items: flex-end; /* Alinea los elementos dentro de esta columna a la derecha */
+    width: 20%; /* Ancho menor para el logo */
+  }
+
+  /* Columnas centradas */
+  .footer-column.center-column {
+    width: 25%; /* Ajusta el ancho de las columnas centrales */
+    text-align: center; /* Centra el contenido */
+  }
+
+  .footer-column h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .footer-column ul li:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .footer-column img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: 290px;
+  }
+
+  .email-input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-column {
+      width: 100%;
+      text-align: center;
+    }
+
+    .footer-column.logo-column {
+      align-items: center;
+      text-align: center;
+    }
+
+    .email-input {
+      width: 100%;
+    }
+  }
+}
