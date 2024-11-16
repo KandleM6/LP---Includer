@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Includer - Acceso sin Barreras</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Luckiest+Guy&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="Assets/styles/IniciarSesión-CSS.css" />
+  </head>
+  <body>
+    <!-- Barra Superior -->
+    <div class="barra-superior">
+      <span>ENCUÉNTRANOS EN</span>
+      <div class="social-icons">
+        <a href="#"><img src="Assets/images/pngwing.com (5).png" alt="TikTok" /></a>
+        <a href="#"><img src="Assets/images/pngegg.png" alt="Facebook" /></a>
+        <a href="#"><img src="Assets/images/pngwing.com (6).png" alt="Instagram" /></a>
+      </div>
+    </div>
+    <nav class="topheader">
+      <a href="index.html" class="logo">
+        <img src="Assets/images/LOGO_INCLUDER-removebg-preview (4).png" alt="Includer Logo" />
+      </a>
+      <h1>INCLUDER</h1>
+      <!--Boton menu responsive- OPEN-->
+      <button class="open-menu" aria-label="Abrir-menu">
+        <img src="Assets/images/menu.png" alt="Menú hamburguesa"/>
+      </button>
+      <ul class="menu-horizontal">
+        <!--Boton menu responsive- CLOSE-->
+        <button class="close-menu" aria-label="Cerrar-menu">  
+          <img src="Assets/images/close.png" alt="Menú hamburguesa"/>
+        </button>
+        <li>
+          <a href="" class="btn-explora">EXPLORA</a>
+          <ul class="menu-vertical">
+            <li>
+              <a href="MapaInteractivo-HTML.html">Mapa Interactivo</a>
+            </li>
+            <li><a href="Recursos-HTML.html">Recursos</a></li>
+            <li>
+              <a href="NuestrosServicios-HTML.html"
+                >Nuestros servicios</a
+              >
+            </li>
+            <li><a href="Evaluaciones-HTML.html">Evaluaciones</a></li>
+            <li>
+              <a href="SoporteTécnico-HTML.html">Soporte técnico</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html" class="btn-home">HOME</a>
+        </li>
+        <li>
+          <a href="IniciarSesión-HTML.html" class="btn-login"
+            >INICIAR SESIÓN</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- Sección Iniciar sesion -->
+    <div class="Inicio-sesion">
+      <div id="INICIAR-SESION">
+        <img src="Assets/images/pngwing.com (8).png" alt="Persona" class="bienvenido" />
+        <h1>BIENVENIDO A INCLUDER</h1>
+        <br><br><br>
+        <div class="input-group">
+          <form name="frm" method="post" action="">
+            <fieldset id="form">
+              <ul>
+                <li>
+                  <label>EMAIL ✉️</label>
+                  <input type="text" name="femail" size="15" />
+                </li>
+                <li>
+                  <label>CONTRASEÑA 👁️</label>
+                  <input type="text" name="fpassword" size="15" />
+                </li>
+              </ul>
+              <br>
+              <input type="submit" class="btn-frm-ins" value="INICIAR SESIÓN" />
+            </fieldset>
+        </form>
+      </div>
+
+      <div class="Ingresa-con">
+        <p class="login-text">O INGRESA CON</p>
+        <div class="iconos-ingresa">
+          <img src="Assets/images/pngwing.com (7).png" alt="Google" class="ingresa-g" />
+          <img
+            src="Assets/images/pngwing.com (6).png"
+            alt="instagram"
+            class="ingresa-ig"
+          />
+          <img src="Assets/images/pngegg.png" alt="facebook" class="ingresa-fb" />
+        </div>
+        <div class="illustrations">
+          <img
+            src="Assets/images/PERSONA EN SILLA DE RUEDAS SUBIENDO RAMPA.jpg"
+            alt="Ilustración izquierda"
+            class="left-illustration"
+          />
+          <img
+            src="Assets/images/PERSONA EN SILLA DE RUEDAS SUBIENDO RAMPA.jpg"
+            alt="Ilustración derecha"
+            class="right-illustration"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="Assets/scripts/IniciarSesión-JS.js"></script>
+</html>
+
