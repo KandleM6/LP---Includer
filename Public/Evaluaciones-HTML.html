@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Includer - Acceso sin Barreras</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Luckiest+Guy&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="Assets/styles/Evaluaciones-CSS.css" />
+  </head>
+  <body>
+    <!-- Barra Superior -->
+    <div class="barra-superior">
+      <span>ENCUÉNTRANOS EN</span>
+      <div class="social-icons">
+        <a href="#"><img src="Assets/images/pngwing.com (5).png" alt="TikTok" /></a>
+        <a href="#"><img src="Assets/images/pngegg.png" alt="Facebook" /></a>
+        <a href="#"
+          ><img src="Assets/images/pngwing.com (6).png" alt="Instagram"
+        /></a>
+      </div>
+    </div>
+
+    <header class="topheader">
+      <a href="index.html" class="logo">
+        <img src="Assets/images/LOGO_INCLUDER-removebg-preview (4).png" alt="Includer Logo" />
+      </a>
+      <h1>INCLUDER</h1>
+      <!-- Botón menu responsive - OPEN -->
+      <button class="open-menu" aria-label="Abrir-menu">
+        <img src="Assets/images/menu.png" alt="Menú hamburguesa" />
+      </button>
+      
+      <nav>
+        <ul class="menu-horizontal">
+          <!-- Botón menu responsive - CLOSE -->
+          <button class="close-menu" aria-label="Cerrar-menu">  
+            <img src="Assets/images/close.png" alt="Cerrar menú" />
+          </button>
+          <li>
+            <a href="#" class="btn-explora">EXPLORA</a>
+            <ul class="menu-vertical">
+              <li>
+                <a href="MapaInteractivo-HTML.html">Mapa Interactivo</a>
+              </li>
+              <li><a href="Recursos-HTML.html">Recursos</a></li>
+              <li>
+                <a href="NuestrosServicios-HTML.html">Nuestros servicios</a>
+              </li>
+              <li><a href="Evaluaciones-HTML.html">Evaluaciones</a></li>
+              <li>
+                <a href="SoporteTécnico-HTML.html">Soporte técnico</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="Contáctanos-HTML.html" class="btn-contacto">CONTÁCTANOS</a>
+          </li>
+          <li>
+            <a href="index.html" class="btn-home">HOME</a>
+          </li>
+          <li>
+            <a href="IniciarSesión-HTML.html" class="btn-login">INICIAR SESIÓN</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <main>
+      <div class="titulo">
+        <h2>EVALUACIONES</h2>
+      </div>
+      <div class="Seccion-principal">
+        <div class="text-content">
+          <h2>
+            ¡Evalúa la accesibilidad de los lugares y contribuye a una ciudad
+            más inclusiva!
+          </h2>
+          <div class="foto-form">
+            <a href="#"><img src="Assets/images/bloc.png" alt="formulario" /></a>
+          </div>
+          <div class="parrafos-container">
+            <p>
+              En Includer, las evaluaciones de nuestros usuarios son clave para
+              mejorar la accesibilidad en Lima.
+            </p>
+            <p>
+              Comparte tu propia experiencia visitando lugares accesibles o
+              señalando barreras.
+            </p>
+          </div>
+          <p>
+            Tu contribución ayuda a otros a encontrar los sitios que mejor se
+            adaptan a sus necesidades y fomenta cambios positivos en nuestra
+            ciudad.
+          </p>
+        </div>
+        <!-- Contenedor de flechas centrado -->
+        <div class="flechas">
+          <span>➤➤➤➤</span>
+        </div>
+        <div class="form-section">
+          <h2>FORMULARIO DE EVALUACIÓN</h2>
+          <form name="frm" class="form-entero">
+            <div class="form-group">
+              <label for="nombre-lugar">Nombre del lugar</label>
+              <input type="text" id="nombre-lugar" name="nombrelugar" />
+            </div>
+            <div class="form-group">
+              <label for="tipo-lugar">Tipo de lugar</label>
+              <input type="text" id="tipo-lugar" name="tipolugar" />
+            </div>
+            <div class="form-group">
+              <label>Calificación</label>
+              <div class="estrellas" id="rating">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+              </div>
+              <input type="hidden" id="calificacion" name="calificacion" />
+            </div>
+            <div class="form-group">
+              <label for="coment-adicional">Comentario adicional</label>
+              <textarea
+                id="coment-adicional"
+                name="comentadicional"
+                rows="4"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="submit-btn">
+                Enviar evaluación
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- PIE DE PAGINA -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>
+            <a href="index.html"">
+              <img
+                src="Assets/images/LOGO_INCLUDER-removebg-preview (4).png"
+                alt="Logo Includer"
+                style="width: 40px; vertical-align: middle; margin-right: 10px"
+              />
+            </a>
+            INCLUDER
+          </h3>
+          <ul>
+            <li><a href="#">Copyright © 2024 Includer.</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Empresa</h3>
+          <ul>
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="#">Contáctanos</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Soporte</h3>
+          <ul>
+            <li><a href="#">Centro de Ayuda</a></li>
+            <li><a href="#">Términos de Servicio</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Mantente al día</h3>
+          <form>
+            <input
+              type="email"
+              placeholder="Tu correo electrónico"
+              class="email-input"
+            />
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="Assets/scripts/Evaluaciones-JS.js"></script>
+</html>
