@@ -1,0 +1,776 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  background-color: #f4f1f1;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+/* Barra Superior */
+.barra-superior {
+  background-color: #0b3dad;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.05rem;
+}
+
+.barra-superior span {
+  font-weight: bold;
+  margin-left: 1200px;
+}
+
+.social-icons img {
+  width: 23px;
+  margin-left: 5px;
+}
+
+/* Alineación del Menú Horizontal */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px; /* Tamaño reducido del logo */
+  margin-right: 10px;
+  filter: drop-shadow(0 2px 5px #33333384);
+}
+
+.topheader h1 {
+  font-size: 25px; /* Tamaño más pequeño para el texto del logo */
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin-left: -100px;
+  padding-left: -20px;
+}
+
+/*HEADER*/
+.topheader {
+  width: 100%;
+  z-index: 100;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #89abea;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.menu-vertical li {
+  margin: 0; /* Eliminar margen entre los elementos */
+}
+
+.menu-horizontal li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  justify-content: inline-block;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.menu-horizontal li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  margin: 0;
+  width: 150px; /* Ajustar el ancho según sea necesario */
+  background-color: #89abea;
+  z-index: 500;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-vertical li a {
+  display: block;
+  padding: 10px 15px; /* Ajustar el padding según sea necesario */
+  color: white;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.menu-vertical li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-horizontal li {
+  margin-left: 20px; /* Ajustar el espacio entre los botones principales */
+}
+
+.btn-explora, .btn-contacto, .btn-home {
+  -webkit-text-stroke: 0.5px black;
+  }
+
+.btn-login {
+  background-color: #0b3dad;
+  text-decoration: none;
+}
+.btn-login:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Sección Principal */
+.Seccion-principal {
+  display: flex;
+  justify-content: space-between; /* Centra la sección hero entre la imagen y el borde */
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.text-content {
+  max-width: 50%;
+  flex: 1; /* Toma el espacio necesario para centrar */
+  text-align: center; /* Centra el texto */
+  padding-right: 10px; /* Añade espacio entre el texto y la imagen */
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.Seccion-principal h2 {
+  font-family: Arial, sans-serif;
+  font-size: 39.5px;
+  color: #0866ff;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Seccion-principal p {
+  font-family: "Literata", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 23px;
+  color: #000000;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.cta-button {
+  background-color: #0b3dad;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.cta-button:hover {
+  background-color: #ffffff;
+  color:#000000;
+  border-color: #0b3dad;
+}
+
+.Seccion-principal h3 {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Literata", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 50px;
+}
+
+.TABS {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  margin-top: -40px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.tab {
+  background-color: #0b3dad;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-style: normal;
+  flex: 1; /* Toma el espacio necesario para centrar */
+  text-align: center; /* Centra el texto */
+  padding-right: 10px; /* Añade espacio entre el texto y la imagen */
+}
+
+.image {
+  max-width: 30%;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Barra flotante de redes sociales */
+.Container_SN {
+  padding: 0;
+  margin: -35px;
+  position: fixed;
+  right: -130px;
+  top: 230px;
+  width: 210px;
+  z-index: 1100;
+  }
+  .Banner_SN li {
+  list-style-type: none;
+  opacity: 1;
+  color: #0b3dad;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 12px;
+  }
+  .Banner_SN li:hover {
+  margin-left: -80px;
+  }
+  .Banner_SN li img {
+  float: left;
+  margin: 5px 5px;
+  margin-right: 12px;
+  }
+  .Banner_SN li p {
+  padding-top: 5px;
+  margin: 0;
+  line-height: 16px;
+  font-size: 10px;
+  }
+  .Banner_SN li p a {
+  text-decoration: none;
+  color: darkblue;
+  font-family: "Neuton", serif;
+  font-style: normal;
+  font-weight: bold;
+  }
+
+/* Sección Servicios */
+.barra-degradado {
+  height: 30px; /* Ajusta la altura según tus necesidades */
+  background: linear-gradient(to right, #89ABEA, #ffffff);
+  margin-top: 40px; /* Añade un margen superior */
+  margin-bottom: 20px; /* Añade un margen inferior para separarla del texto de Servicios */
+}
+
+.Servicios {
+  background: #FCF7F6
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px; 
+  margin-bottom: 20px;
+}
+
+#Servicios-Includer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Servicios-Includer h3 {
+  color: #0866FF;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  margin-left: 90px;
+  font-family: "Literata", serif;
+  font-style: normal;
+  text-shadow: 1px 1px 2px black;
+}
+
+#Servicios-Includer p {
+  font-size: 18px;
+  color: #000000;
+  max-width: 50%;
+  line-height: 1.6;
+  margin: 0;
+  font-family: "Literata", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: justify;
+}
+
+.tab-serv {
+  background-color: #89ABEA;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 2px solid #000000;
+  margin-right: 60px;
+  font-size: 1.2rem;
+  font-family: "Neuton", serif;
+  font-style: normal;
+}
+
+.tab-serv:hover {
+  background-color: #5585b5;
+}
+
+/* Sección Nosotros */
+section.Nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #C1D6FF;
+  color: #0866FF;
+}
+
+#Nosotros-Includer {
+  display: flex;
+  flex-direction: row;
+  max-width: 1400px;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Contenido de texto */
+.text-content {
+  flex: 1;
+}
+
+.text-content h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #0866FF;
+  margin-bottom: 20px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Nosotros p {
+  font-size: 1.1em;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-family: "Literata", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Imagen de la sección Nosotros */
+.imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen img {
+  max-width: 80%; /* Ajuste el tamaño máximo de la imagen */
+  height: 1;
+  border-radius: 8px;
+}
+
+/* Sección Nosotros Tabs */
+section.Nosotros-tabs {
+  width: 100%;
+  background-color: #F4F1F1; /* Color de fondo opcional */
+  padding: 20px 0; /* Espaciado vertical */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+.Nosotros-tabs h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+  text-shadow: 1px 1px 2px rgb(76, 74, 74);
+}
+
+.text-content {
+  width: 100%; /* Asegura que el contenido ocupe todo el ancho */
+  max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
+  text-align: center; /* Centra el texto */
+}
+
+.tabs {
+  margin-bottom: 40px; /* Espacio entre las pestañas y el título */
+  text-shadow: 1px 1px 2px black;
+}
+
+.tab {
+  display: inline-block;
+  background-color: #0B3DAD; 
+  border-color: #0B3DAD;
+  color: white;
+  padding: 15px 15px; /* Aumenta el espaciado interno para agrandar los botones */
+  margin: 0 30px; /* Aumenta el espaciado entre los botones */
+  border-radius: 5px; 
+  text-decoration: none;
+  font-weight: bold; 
+  font-size: 20px; /* Aumenta el tamaño de la fuente */
+}
+.tab:hover {
+  background-color: #ffffff; 
+  color: #000000; 
+}
+
+h1 {
+  color: #0866FF; /* Color del título */
+  font-size: 28px; /* Tamaño de fuente del título */
+  font-weight: bold; /* Negrita */
+  margin-top: 20px; /* Espacio superior */
+}
+/* Pie de pagina */
+.footer-section {
+  background-color: #D9D9D9;
+  color: #000000;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  width: 20%;
+}
+
+.footer-column h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-column ul {
+  list-style-type: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-column li {
+  font-family: "Literata", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  }
+
+.footer-column li:hover {
+ font-weight: bold;
+ text-decoration: underline;
+ text-decoration-color: black;
+ }
+
+
+.email-input {
+  padding: 10px; /* Espaciado interno */
+  width: 80%; /* Ancho del campo de entrada */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris claro */
+  font-size: 16px; /* Tamaño de fuente */
+  margin-bottom: 10px; /* Espacio inferior entre el campo y el botón */
+  background-color: #ffffff;
+}
+/*Configuracion-Responsive*/
+@media (max-width: 768px) {
+  /*MENU*/
+  .menu-horizontal {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; /* Cambiar de 80% a 100% para que ocupe todo el ancho */
+    height: 100%; /* Asegurarse de que el menú ocupe toda la altura de la pantalla */
+    align-items: center;
+    background-color: #0b3dad;
+    overflow-y: auto;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 9999;
+    padding: 20px 0;
+  }
+
+  .menu-horizontal.menu_opened {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .menu-horizontal li {
+    padding: 10px 0; /* Espacio vertical entre los botones */
+    margin: 0; /* Asegurarse de que no haya margen */
+    width: 100%; /* Asegurarse de que los botones ocupen todo el ancho */
+    text-align: center; /* Centrar el texto de los botones */
+  }
+
+  .menu-horizontal a {
+    color: black;
+    line-height: 40px;
+    font-size: 22px;
+    padding: 5px 0;
+  }
+
+  .menu-horizontal a:hover,
+  .menu-horizontal a.selected {
+    color: #0b3dad;
+    text-decoration: underline;
+  }
+
+  .menu-horizontal a:focus {
+    outline: 2px dashed #4b7cdb;
+    outline-offset: 4px;
+  }
+
+  .menu-horizontal a::after {
+    content: none;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 30px;
+    position: absolute;
+    right: 10px; /* Ajusta este valor para mover más a la derecha */
+    top: 20px;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 10px 10px;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Ajuste de la barra superior */
+  .barra-superior {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barra-superior span {
+    margin-left: 0;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+
+  .topheader h1 {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  /* Sección principal */
+  .Seccion-principal {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .image {
+    width: 250px;
+  }
+
+  .text-content {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .Seccion-principal h2 {
+    font-size: 24px;
+  }
+
+  .Seccion-principal p {
+    font-size: 18px;
+  }
+
+  #Servicios-Includer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #Servicios-Includer h3 {
+    margin-left: 0; /* Eliminar margen izquierdo en pantallas pequeñas */
+    margin-bottom: 10px;
+  }
+
+  #Servicios-Includer p {
+    max-width: 70%; /* Ocupa el ancho completo en pantallas pequeñas */
+    margin: 10px 0;
+  }
+
+  .tab-serv {
+    margin: 10px 0; /* Separación vertical para el botón */
+  }
+
+  #Nosotros-Includer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-content {
+    margin-bottom: 20px; /* Añade espacio entre el texto y la imagen */
+  }
+
+  .imagen img {
+    max-width: 100%; /* Ajusta la imagen al ancho completo de la pantalla */
+    height: auto;
+  }
+
+  .Seccion-principal {
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos en el eje horizontal */
+  }
+
+  .text-content {
+    order: 1; /* Asegura que el contenido de texto esté antes de la imagen */
+    margin: 0 20px; /* Reduce el margen para adaptarse a pantallas pequeñas */
+  }
+
+  .cta-button {
+    margin-bottom: 20px; /* Añade espacio inferior al botón */
+  }
+
+  .image {
+    order: 2; /* Coloca la imagen justo después del botón "CREAR CUENTA" */
+    max-width: 80%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+    margin: 20px 0; /* Espacio alrededor de la imagen */
+  }
+
+  .Seccion-principal h2 {
+    font-size: 2rem;
+  }
+
+  /* Cambiar la disposición de .TABS para que los elementos estén en columna */
+  .TABS {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 10px; /* Ajusta el espacio entre los tabs */
+    margin-top: 20px; /* Añade espacio superior para separación */
+    width: 100%; /* Asegura que los tabs ocupen todo el ancho */
+    align-items: center; /* Centra los tabs en la columna */
+  }
+
+  .tab {
+    margin: 10px 0; /* Ajusta el margen entre los botones */
+    width: 60%; /* Hace que los botones ocupen el 100% del ancho disponible */
+    text-align: center; /* Centra el texto dentro del botón */
+  }
+
+  .Nosotros-tabs h1 {
+    font-size: 2rem; /* Ajusta el tamaño del título en pantallas pequeñas */
+  }
+
+  /* Footer */
+  .footer-section .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom p {
+    font-size: 2.5rem;
+  }
+
+  .footer-column h3 {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .footer-column ul {
+    text-align: center;
+  }
+
+  .footer-column img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footer-column .email-input {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+

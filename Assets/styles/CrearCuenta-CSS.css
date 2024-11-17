@@ -1,0 +1,533 @@
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  background-color: #f4f1f1;
+}
+
+/* Barra Superior */
+.barra-superior {
+  background-color: #0b3dad;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.05rem;
+}
+
+.barra-superior span {
+  font-weight: bold;
+  margin-left: 1200px;
+}
+
+.social-icons img {
+  width: 23px;
+  margin-left: 5px;
+}
+
+/* Barra de Navegación */
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #89abea;
+  padding: 10px 20px;
+}
+
+/* Alineación del Menú Horizontal */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px; /* Tamaño reducido del logo */
+  margin-right: 10px;
+  filter: drop-shadow(0 2px 5px #33333384);
+}
+
+.topheader h1 {
+  font-size: 25px; /* Tamaño más pequeño para el texto del logo */
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin-left: -100px;
+  padding-left: -20px;
+}
+
+/*HEADER*/
+.topheader {
+  width: 100%;
+  z-index: 100;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #89abea;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.menu-vertical li {
+  margin: 0; /* Eliminar margen entre los elementos */
+}
+
+.menu-horizontal li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  justify-content: inline-block;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.menu-horizontal li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  margin: 0;
+  width: 150px; /* Ajustar el ancho según sea necesario */
+  background-color: #89abea;
+  z-index: 500;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-vertical li a {
+  display: block;
+  padding: 10px 15px; /* Ajustar el padding según sea necesario */
+  color: white;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.menu-vertical li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-horizontal li {
+  margin-left: 20px; /* Ajustar el espacio entre los botones principales */
+}
+
+.btn-explora,
+.btn-home {
+  -webkit-text-stroke: 0.5px black;
+}
+
+.btn-login {
+  background-color: #0b3dad;
+  text-decoration: none;
+}
+.btn-login:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* crear cuenta */
+.Crear-cnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 2000px;
+  background-color: #f4f4f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  text-align: center;
+}
+
+#CREAR-CUENTA {
+  width: 100%;
+  max-width: 800px;
+}
+
+.Crear-cnt h1 {
+  font-size: 3.8rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 3px 3px 5px rgb(17, 48, 141);
+  -webkit-text-stroke: 0.5px white;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #ffffff;
+  -webkit-text-stroke: 0.9px black;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  text-shadow: 1px 1px 2px black;
+  font-family: "Luckiest Guy", cursive;
+}
+/* Estilo para eliminar bordes, padding y márgenes por defecto en fieldset */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar el contenido dentro del fieldset */
+}
+
+/* Organizar las filas de los campos del formulario */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Asegurar que las filas ocupen todo el ancho del formulario */
+  gap: 20px; /* Espacio entre las dos columnas */
+  margin-bottom: 20px; /* Separación entre las filas */
+}
+
+/* Estilo para las columnas dentro de cada fila */
+.form-column {
+  width: 48%; /* Las columnas ocuparán casi la mitad del espacio */
+}
+
+/* Estilos básicos para los campos de texto */
+input[type="text"] {
+  width: 100%;
+  padding: 13px;
+  margin-top: 5px;
+  background-color: #89abea;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  border: 2px solid white;
+}
+
+.form-column label {
+  color: #000;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Estilo para los botones dentro del fieldset */
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Estilo para los botones */
+input[type="submit"],
+.btn-secondary {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  width: 100%; /* Hacer que los botones ocupen todo el ancho del contenedor */
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background-color: #0b3dad; /* Color de fondo de los botones */
+  color: white;
+  max-width: 220px; /* Limitar el tamaño de los botones */
+}
+
+/* Botón "Crear cuenta" (btn-primary) */
+.btn-primary:hover {
+  background-color: #89abea;
+  color: #000;
+}
+
+/* Botón "Iniciar sesión" (btn-secondary) */
+.btn-secondary:hover {
+  background-color: #89abea;
+  color: #000;
+}
+
+/* Asegurarnos de que los botones no estén bloqueados */
+input[type="submit"],
+.btn-secondary {
+  pointer-events: all; /* Asegura que los botones sean clickeables */
+}
+/* Evitar que otros elementos bloqueen los botones */
+.btn-primary,
+.btn-secondary {
+  z-index: 10; /* Asegura que los botones se encuentren por encima de otros elementos */
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.login-text {
+  grid-column: span 2;
+  font-size: 1.4rem;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Literata", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Ilustraciones */
+.illustrations {
+  position: absolute;
+  bottom: -190px;
+  left: 0; /* Alinea el contenedor al borde izquierdo */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  display: flex;
+  justify-content: flex-start; /* Alinea las imágenes al inicio del contenedor */
+  padding-left: 380px; /* Añade un poco de espacio desde el borde izquierdo */
+}
+
+.left-illustration,
+.right-illustration {
+  width: 400px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  padding: 50px;
+}
+
+.left-illustration {
+  transform: scaleX(-1); /* Efecto espejo */
+  margin-left: -100px;
+}
+
+.right-illustration {
+  margin-left: 160px; /* Espacio entre las imágenes */
+}
+
+/*Configuracion Responsive*/
+@media (max-width: 768px) {
+  /*MENU*/
+
+  .menu-horizontal {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #0b3dad;
+    height: 100%;
+    overflow-y: auto;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 999;
+    padding: 20px 0;
+  }
+
+  .menu-horizontal.menu_opened {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .menu-horizontal li {
+    padding: 10px 0; /* Espacio vertical entre los botones */
+    margin: 0; /* Asegurarse de que no haya margen */
+    width: 100%; /* Asegurarse de que los botones ocupen todo el ancho */
+    text-align: center; /* Centrar el texto de los botones */
+  }
+
+  .menu-horizontal a {
+    color: black;
+    line-height: 40px;
+    font-size: 22px;
+    padding: 5px 0;
+  }
+
+  .menu-horizontal a:hover,
+  .menu-horizontal a.selected {
+    color: #0b3dad;
+    text-decoration: underline;
+  }
+
+  .menu-horizontal a:focus {
+    outline: 2px dashed #4b7cdb;
+    outline-offset: 4px;
+  }
+
+  .menu-horizontal a::after {
+    content: none;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 30px;
+    position: absolute;
+    right: 10px; /* Ajusta este valor para mover más a la derecha */
+    top: 10px;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 10px 10px;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+  /* Ajuste de la barra superior */
+  .barra-superior {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barra-superior span {
+    margin-left: 0;
+  }
+
+  /* Ajuste de la barra de navegación */
+  .barra-navegacion {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+  /*FORMULARIO INSCRIPCION*/
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-column {
+    width: 100%;
+  }
+
+  .illustrations {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .barra-superior span {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .Inscripcion-Section {
+    padding: 20px 10px;
+  }
+
+  .Container-Inscripcion {
+    width: 90%;
+    padding: 15px;
+  }
+
+  form fieldset {
+    padding: 15px;
+  }
+
+  form legend {
+    font-size: 1.5rem;
+  }
+
+  form label {
+    width: auto;
+    font-size: 0.9rem;
+  }
+
+  form input[type="text"],
+  form select,
+  form textarea {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  form input[type="radio"] {
+    margin-left: 5px;
+  }
+
+  form .btn_frm_insc {
+    width: 40%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .illustrations {
+    display: none; /* Oculta la barra divisoria */
+  }
+
+  /*FOOTER*/
+  .footer-section .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-column h3 {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .footer-column ul {
+    text-align: center;
+  }
+
+  .footer-column img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+}

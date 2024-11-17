@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  background-color: #f4f1f1;
+}
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+/* Barra Superior */
+.barra-superior {
+  background-color: #0b3dad;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.05rem;
+}
+
+.barra-superior span {
+  font-weight: bold;
+  margin-left: 1200px;
+}
+
+.social-icons img {
+  width: 23px;
+  margin-left: 5px;
+}
+
+/* Alineación del Menú Horizontal */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px; /* Tamaño reducido del logo */
+  margin-right: 10px;
+  filter: drop-shadow(0 2px 5px #33333384);
+}
+
+.topheader h1 {
+  font-size: 25px; /* Tamaño más pequeño para el texto del logo */
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin-left: -100px;
+  padding-left: -20px;
+}
+
+/*HEADER*/
+.topheader {
+  width: 100%;
+  z-index: 100;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #89abea;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.menu-vertical li {
+  margin: 0; /* Eliminar margen entre los elementos */
+}
+
+.menu-horizontal li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  justify-content: inline-block;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.menu-horizontal li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  margin: 0;
+  width: 150px; /* Ajustar el ancho según sea necesario */
+  background-color: #89abea;
+  z-index: 500;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-vertical li a {
+  display: block;
+  padding: 10px 15px; /* Ajustar el padding según sea necesario */
+  color: white;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.menu-vertical li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-horizontal li {
+  margin-left: 20px; /* Ajustar el espacio entre los botones principales */
+}
+
+.btn-explora,
+.btn-home {
+  -webkit-text-stroke: 0.5px black;
+}
+
+.btn-login {
+  background-color: #0b3dad;
+  text-decoration: none;
+}
+.btn-login:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* INICIAR SESION */
+.Inicio-sesion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 2000px;
+  background-color: #f4f1f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+#INICIAR-SESION {
+  width: 100%;
+  max-width: 800px;
+}
+
+#INICIAR-SESION h1 {
+  display: inline-flex;
+  align-items: center;
+  font-size: 3.8rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 3px 3px 5px rgb(17, 48, 141);
+  -webkit-text-stroke: 0.5px white;
+}
+
+.bienvenido {
+  width: 70px; /* Ajusta el tamaño según sea necesario */
+  height: 70px;
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+.input-group {
+  text-align: center; /* Centrar texto dentro del grupo */
+}
+.input-group label {
+  color: #000;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+fieldset {
+  border: none; /* Eliminar el borde del fieldset */
+  padding: 0; /* Eliminar el relleno del fieldset */
+}
+
+ul {
+  list-style-type: none; /* Eliminar viñetas de la lista */
+  padding-inline-start: 0; /* Eliminar el relleno de la lista */
+  margin: 0; /* Eliminar márgenes de la lista */
+}
+
+li {
+  margin: 0; /* Espacio entre los elementos de la lista */
+  position: relative; /* Permitir posicionamiento de la etiqueta respecto al contenedor */
+}
+
+label {
+  position: absolute; /* Posicionar la etiqueta encima del cuadro */
+  top: -15px; /* Ajustar la posición vertical para que esté encima del cuadro */
+  left: 250px; /* Alinear a la izquierda */
+  background: #f0f0f0; /* Fondo para la etiqueta para mejorar visibilidad */
+  padding: 0 5px; /* Espaciado horizontal */
+  color: #333; /* Color de texto de la etiqueta */
+  display: inline-block;
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 100%; /* Hacer que los campos de texto ocupen el 100% del ancho */
+  max-width: 300px; /* Establecer un ancho máximo */
+  padding: 15px; /* Agregar un poco de relleno para mejor apariencia */
+  border: 2px solid white; /* Bordes blancos */
+  border-radius: 4px; /* Bordes redondeados */
+  background-color: #89abea; /* Fondo azul */
+  color: rgb(0, 0, 0); /* Color de texto en el cuadro */
+  margin-top: 10px; /* Espacio entre la etiqueta y el cuadro de texto */
+}
+li:first-child {
+  margin-bottom: 40px; /* Aumentar el margen inferior del primer elemento */
+}
+
+.btn-frm-ins {
+  grid-column: span 2;
+  padding: 8px;
+  background-color: #0b3dad;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  max-width: 220px;
+  width: 100%;
+  font-family: "Neuton", serif;
+  font-weight: 700;
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.btn-frm-ins:hover {
+  background-color: #89abea;
+  color: #000;
+}
+
+.Ingresa-con {
+  display: flex;
+  flex-direction: column; /* Mantiene el texto en columna */
+  align-items: center; /* Centra el texto */
+  width: 100%;
+  max-width: 2000px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 80px;
+  margin-top: 40px;
+}
+
+.Ingresa-con p {
+  margin-bottom: 10px; /* Espacio entre el texto y las imágenes */
+  font-family: "Literata", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.ingresa-con img {
+  margin: 0 20px; /* Espacio a los lados de las imágenes */
+}
+
+.ingresa-con .iconos-ingresa {
+  display: flex; /* Alinea las imágenes en fila */
+  justify-content: center; /* Centra las imágenes */
+}
+
+.ingresa-g,
+.ingresa-ig,
+.ingresa-fb {
+  width: 40px;
+  cursor: pointer;
+}
+
+.login-text {
+  margin-bottom: 10px;
+}
+
+.login-text {
+  grid-column: span 2;
+  font-size: 1.2em;
+  color: #000000;
+  margin-top: 10px;
+}
+
+/* Ilustraciones */
+.illustrations {
+  position: absolute;
+  bottom: -80px;
+  left: 0; /* Alinea el contenedor al borde izquierdo */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  display: flex;
+  justify-content: flex-start; /* Alinea las imágenes al inicio del contenedor */
+  padding-left: 380px; /* Añade un poco de espacio desde el borde izquierdo */
+}
+
+.left-illustration,
+.right-illustration {
+  width: 250px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+}
+/* Ajuste para mantener imágenes en posición fija y que cambien de tamaño */
+
+.left-illustration {
+  transform: scaleX(-1); /* Efecto espejo */
+  margin-left: 10px; /* Espacio entre las imágenes */
+}
+
+.right-illustration {
+  margin-left: 230px; /* Espacio entre las imágenes */
+}
+
+/*Configuracion-Responsive*/
+@media (max-width: 768px) {
+  /*MENU*/
+  .menu-horizontal {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80%;
+    align-items: center;
+    background-color: #0b3dad;
+    height: 100%;
+    overflow-y: auto;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 999;
+    padding: 20px 0;
+  }
+
+  .menu-horizontal.menu_opened {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .menu-horizontal li {
+    padding: 10px 0; /* Espacio vertical entre los botones */
+    margin: 0; /* Asegurarse de que no haya margen */
+    width: 100%; /* Asegurarse de que los botones ocupen todo el ancho */
+    text-align: center; /* Centrar el texto de los botones */
+  }
+
+  .menu-horizontal a {
+    color: black;
+    line-height: 40px;
+    font-size: 22px;
+    padding: 5px 0;
+  }
+
+  .menu-horizontal a:hover,
+  .menu-horizontal a.selected {
+    color: #0b3dad;
+    text-decoration: underline;
+  }
+
+  .menu-horizontal a:focus {
+    outline: 2px dashed #4b7cdb;
+    outline-offset: 4px;
+  }
+
+  .menu-horizontal a::after {
+    content: none;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 30px;
+    position: absolute;
+    right: 10px; /* Ajusta este valor para mover más a la derecha */
+    top: 20px;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 10px 10px;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Ajuste de la barra superior */
+  .barra-superior {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barra-superior span {
+    margin-left: 0;
+  }
+
+  /* Ajuste de la barra de navegación */
+  .barra-navegacion {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  /* Ajuste de la sección de inicio de sesión */
+  .Inicio-sesion {
+    padding: 10px;
+  }
+
+  #INICIAR-SESION h1 {
+    font-size: 2.5rem;
+  }
+
+  .input-group label {
+    left: 120px; /* Reduce el margen para ajustarse a pantallas pequeñas */
+  }
+
+  /* Ajuste de campos de texto */
+  input[type="text"] {
+    width: 100%; /* Ocupa el ancho total en pantallas pequeñas */
+  }
+
+  .btn-frm-ins {
+    width: 100%; /* Ocupa el ancho total en pantallas pequeñas */
+  }
+
+  /* Ajuste de iconos sociales en "Ingresa con" */
+  .Ingresa-con {
+    padding: 20px;
+  }
+
+  .Ingresa-con p {
+    font-size: 1.2rem;
+  }
+
+  .iconos-ingresa {
+    flex-direction: row;
+  }
+
+  /* Ajuste de ilustraciones */
+  .illustrations {
+    display: none; /* Oculta la barra divisoria */
+  }
+}
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.menu-horizontal li {
+  margin-left: 20px; /* Espacio entre los botones principales */
+  position: relative; /* Para posicionar el menú vertical */
+}
+
+.menu-vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  margin: 0; /* Eliminar margen */
+  width: 150px; /* Ajustar el ancho según sea necesario */
+  background-color: #89abea;
+  z-index: 500;
+  left: 0; /* Alinear con el botón "Explora" */
+}
+
+.menu-vertical li {
+  margin: 0; /* Eliminar margen entre los elementos */
+}
+
+.menu-vertical li a {
+  display: block;
+  padding: 10px 15px; /* Ajustar el padding según sea necesario */
+  color: white;
+  text-decoration: none;
+  border: 3px solid #000000;
+  border-radius: 5px;
+}
+
+.menu-vertical li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block; /* Mostrar el menú vertical al pasar el mouse */
+}
